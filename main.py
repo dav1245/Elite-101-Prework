@@ -19,7 +19,7 @@ Menu = ['First: Food?', 'Second: Movies?', 'Third: TV Shows?', 'X-it: Exit?']
 for i in sorted(Menu):
     print(i)
 
-options = input ("Choose one, but there's a twist: if you choose a word, you can never go back to that word or any words before it. Choose wisely.. (The words are: First, Second, Third or X-it): ")
+options = input ("Choose one, but there's a twist: if you choose a word, you can never go back to that word or any words before it. Choose wisely. To start, type the word First: ")
 
 if options == "First":
     print ("I'm gonna give you a fact and then redirect you to the menu. I might be a CHATbot but I'm not that chatty! Let's talk about pizza.")
@@ -37,13 +37,13 @@ for i in sorted(Menu):
     print(i)
 
 
+
 if first_options == "Third":
     print ("TV Shows. Everyone loves 'em. I'll talk about my favorite, and then redirect you to the menu.")
     print ("Doctor Who. One of the greatest of all time. My most favorite quote is from the 12th Doctor, who says that Human progress isn’t measured by industry. It’s measured by the value you place on a life. An unimportant life. A life without privilege. The boy who died on the river, that boy's value is your value. That's what defines an age. That's what defines a species.")
 Menu = ['First: Food?', 'Second: Movies?', 'Third: TV Shows?', 'X-it: Exit?']
 for i in sorted(Menu):
     print(i)
-
 
 if first_options == "X-it":
     print ("Nice meeting you. See ya next time, if ever.")
@@ -82,3 +82,5 @@ elif options == "X-it":
 
 elif question == "No":
     print ("Alright, " + name + ". Bye.")
+
+#I am having a hard time figuring out why the menu keeps appearing twice and I don't know how to continue this code without a loop being made that I can't fill forever (well, I lack the knowledge to do so), so this is what I got.
