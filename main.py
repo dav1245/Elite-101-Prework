@@ -1,4 +1,4 @@
-print ("Welcome to the amazing.. and mediocre.. Chatbot!")
+print ("Welcome to the amazing.. and mediocre.. online clothing retailer!")
 name = input ("First, what's your name? ")
 age = input ("Second, what's your age? ")
 if int(age) < 18:
@@ -10,77 +10,93 @@ if int(age) >= 45:
 if int(age) >= 65:
     print ("Hello, sir " + name + ". You're pretty old.")
 
-question = input ("Since you're here, do you wanna chat? I'm a CHATbot for a reason. Answer Yes or No: ")
+question = input ("Since you're here, do you want to return or exchange items? Answer BUY or RETURN: ")
 
-if question == "Yes":
+if question == "RETURN":
    
-    print ("Great. Here are the options:")
-Menu = ['First: Food?', 'Second: Movies?', 'Third: TV Shows?', 'X-it: Exit?']
+    print ("Great. Here's what you can return. Type First, Second, Third, or X-it.")
+Menu = ['First: Shirts', 'Second: Shoes', 'Third: TVs', 'X-it: Exit']
 for i in sorted(Menu):
     print(i)
-
-options = input ("Choose one, but there's a twist: if you choose a word, you can never go back to that word or any words before it. Choose wisely. To start, type the word First: ")
+    
+options = input ("Choose an option: ")
 
 if options == "First":
-    print ("I'm gonna give you a fact and then redirect you to the menu. I might be a CHATbot but I'm not that chatty! Let's talk about pizza.")
-    print ("Did you know that Pizza originated in Naples, Italy, the word pizza means pie in Italian, and the first recorded use of the word pizza was in a Latin text from Gaeta, Italy in 997 AD? The more you know!")
-Menu = ['First: Food?', 'Second: Movies?', 'Third: TV Shows?', 'X-it: Exit?']
-for i in sorted(Menu):
-    print(i)
-first_options = input ("Choose again, but this time you can only type words Second, Third and X-it: ")
 
-if first_options == "Second":
-    print ("Let's talk about movies. I'll talk about my favorite one, and then redirect you back to the menu.")
-    print ("The Wild Robot. It just came out this year, but it gives deep messages about the mistakes we make and the lessons we learn. It’s a heartwarming story about chosen families and about taking responsibility. I love those kinds of movies.")
-Menu = ['First: Food?', 'Second: Movies?', 'Third: TV Shows?', 'X-it: Exit?']
-for i in sorted(Menu):
-    print(i)
-
-
-
-if first_options == "Third":
-    print ("TV Shows. Everyone loves 'em. I'll talk about my favorite, and then redirect you to the menu.")
-    print ("Doctor Who. One of the greatest of all time. My most favorite quote is from the 12th Doctor, who says that Human progress isn’t measured by industry. It’s measured by the value you place on a life. An unimportant life. A life without privilege. The boy who died on the river, that boy's value is your value. That's what defines an age. That's what defines a species.")
-Menu = ['First: Food?', 'Second: Movies?', 'Third: TV Shows?', 'X-it: Exit?']
-for i in sorted(Menu):
-    print(i)
-
-if first_options == "X-it":
-    print ("Nice meeting you. See ya next time, if ever.")
+    shirts = input ("How many do you want to return?: ")
+    brand1 = input ("What's the brand of the shirts?: ")
+    type = input ("What's the type of shirt you're returning?: ")
+    print ("Thank you for returning " + shirts, brand1, type + " shirts!")
 
 elif options == "Second":
-    print ("Let's talk about movies. I'll talk about my favorite one, and then redirect you back to the menu.")
-    print ("The Wild Robot. It just came out this year, but it gives deep messages about the mistakes we make and the lessons we learn. It’s a heartwarming story about chosen families and about taking responsibility. I love those kinds of movies.")
-Menu = ['First: Food?', 'Second: Movies?', 'Third: TV Shows?', 'X-it: Exit?']
-for i in sorted(Menu):
-    print(i)
-second_options = input ("Choose again, but this time you can only choose between the words Third and X-it: ")
 
-if second_options == "Third":
-    print ("TV Shows. Everyone loves 'em. I'll talk about my favorite, and then redirect you to the menu.")
-    print ("Doctor Who. One of the greatest of all time. My most favorite quote is from the 12th Doctor, who says that Human progress isn’t measured by industry. It’s measured by the value you place on a life. An unimportant life. A life without privilege. The boy who died on the river, that boy's value is your value. That's what defines an age. That's what defines a species.")
-Menu = ['First: Food?', 'Second: Movies?', 'Third: TV Shows?', 'X-it: Exit?']
-for i in sorted(Menu):
-    print(i)
-
-if second_options == "X-it":
-    print ("Nice meeting you. See ya next time, if ever.")
+    shoes = input ("How many do you want to return?: ")
+    brand2 = input ("What's the brand of the shoes?: ")
+    type2 = input("What is the type of shoe you're returning?: ")
+    print ("Thank you for returning " + shoes, brand2, type2 + " shoes!")
 
 elif options == "Third":
-    print ("TV Shows. Everyone loves 'em. I'll talk about my favorite, and then redirect you to the menu.")
-    print ("Doctor Who. One of the greatest of all time. My most favorite quote is from the 12th Doctor, who says that Human progress isn’t measured by industry. It’s measured by the value you place on a life. An unimportant life. A life without privilege. The boy who died on the river, that boy's value is your value. That's what defines an age. That's what defines a species.")
-Menu = ['First: Food?', 'Second: Movies?', 'Third: TV Shows?', 'X-it: Exit?']
+
+    TVs = input ("How many do you want to return?: ")
+    brand3 = input ("What's the brand of the TVs?: ")
+    type3 = input ("What's the type of TV you're returning?: ")
+
+    print ("Thank you for returning " + TVs, brand3, type3 + " TVs!")
+
+elif options =="X-it":
+    print ("Bye!")
+
+
+
+
+elif question == "BUY":
+    
+    print ("Great. Here's what you can buy. Type First, Second, Third, or X-it.")
+Menu = ['First: Shirts', 'Second: Shoes', 'Third: TVs', 'X-it: Exit']
 for i in sorted(Menu):
     print(i)
-third_options = input ("Choose again, but you can only, well, leave. Your last option is to type the word X-it: ")
+    
+options2 = input ("Choose an option: ")
 
-if third_options == "X-it":
-    print ("Nice meeting you. See ya next time, if ever.")
+if options2 == "First":
 
-elif options == "X-it":
-    print ("Nice meeting you. See ya next time, if ever.")
 
-elif question == "No":
-    print ("Alright, " + name + ". Bye.")
+    shirts2 = input ("How many do you want to buy?: ")
+    brand4 = input ("What's the brand of the shirts?: ")
+    type4 = input ("What's the type of shirt you're buying?: ")
 
-#I am having a hard time figuring out why the menu keeps appearing twice and I don't know how to continue this code without a loop being made that I can't fill forever (well, I lack the knowledge to do so), so this is what I got.
+    print ("Shirts cost 36 dollars each.")
+
+    cost = shirts2 * 36
+
+    print ("Thanks for buying " + shirts2, brand4, type4 + " shirts for " + cost + " dollars!")
+
+elif options2 == "Second":
+
+    shoes2 = input ("How many do you want to buy?: ")
+    brand5 = input ("What's the brand of the shoes?: ")
+    type5 = input("What is the type of shoe you're buying?: ")
+   
+    print ("A pair of shoes costs 50 dollars each")
+
+    cost2 = shoes2 * 50
+   
+    print ("Thanks for buying " + shoes2, brand5, type5 + " shoes for " + cost2 + " dollars!")
+
+elif options2 == "Third":
+
+    TVs2 = input ("How many do you want to buy?: ")
+    brand6 = input ("What's the brand of the TVs?: ")
+    type6 = input ("What's the type of TV you're buying?: ")
+    
+    print ("A TV costs 500 dollars.")
+
+    cost3 = TVs2 * 500
+
+    print ("Thanks for buying " + TVs2, brand6, type6 + " TVs for " + cost3 + " dollars!")
+
+elif options2 == "X-it":
+    print ("Bye!")
+
+   
+     
